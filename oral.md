@@ -1,0 +1,43 @@
+- In Ruby what is _________ and what would happen if we couldn't use it/them?
+  - an object
+    - objects are instantiated from classes via the `new` method. They are containers for data that hold both state(instance variables) and behavior (instance methods). If classes are like molds than objects are what are produced out of these molds. Objects interact with each other by sending each other messages (method invocations)
+    - If we didn't have objects we wouldn't be able to protect our data from being tampered with as in the case with procedural programming where everything is exposed. We also wouldn't be able to build more stable applications as objects are far more reliable and cause less errors because they are the sum of small moving parts rather than one mass of dependency. Objects are far more organized by grouping common state and behavior together instead of being split apart and scattered everywhere like in procedural programming.
+  - instantiation
+    - is the process in which objects (or instances) are created from a class. In ruby objects are instantiated via the `new` method being invoked on the desired class `new` triggers the objects `#initialize` method which adds state to an object via instance methods. This process returns an encoding of the objects id and its class name
+    - We need instantiation otherwise we could not create objects, which is the whole point of OOP.
+  - a class
+    - classes define objects, they are like blueprints or molds to an object. They help setup the state and define the objects behaviorthat can operate on and expose the state.
+    - If we didn't have classes we'd not be able to instantiate objects which is the whole point of OOP.
+  - a module
+  - modules as namespacing
+  - module methods
+  - Object Oriented Programming
+  - class inheritance
+  - superclass
+  - subclass
+  - instance variables
+  - instance methods
+  - class variables
+  - class methods
+  - mixins
+  - `public interface`
+  - `private interface`
+  - `BasicObject`
+  - polymorphism
+  - ducktyping
+  - the `self` keyword
+  - the method lookup path
+  - the `#initialize` method?
+  - the `super` keyword
+  - `attr_accessor`, `attr_reader`, `attr_writer`
+  - the Equivalence methods, `#==` `#eql`, `#equal?`, `#object_id`, `#===`
+  - the  comparison methods `#<=>`, `#<`, `#>` `<=`, `>=`
+  - the append methods `<<` `>>`
+  - the concatenation methods `+`
+  - The element setter and getter methods `[]`, `[]=`
+  - `private`, `protected` and `public`
+    - Method Access control is lonely and wants to get to know these new friends - the access modifiers, which are the coolest Ruby methods in school! They hide and show any instance method whenever they want! There are three of them standing in a row and their names are `private`, `protected` and `public`. 
+    - The first one - `private` steps forward and in a very shy voice she lowers her head and says "I-I'm `private`. I hide all my instance methods under me. They're the methods that do all in work in class. I-I don't allow any object to use my methods outside class, only inside class. Using my methods outside class is not allowed!!  My friend `self` wasn't able to use my methods until 2.7 years ago. Now she can use them, but only inside class! 
+    - The big loud one `public` suddenly cuts `private` off and grabs Method Access' Controls hand - "Nice ta meet ya! I'm `public`! All my methods are out in the open for anyone who knows the name of my object or class's! My methods are free for anyone outside class to use and we all play on the class interface - a big, flat open space where objects from other classes hang out with my class's objects!"
+    - And finally the last of the 3 access modifiers - `protected` mumbles - "yeah I'm `protected` I don't really come to class much. I'm a mix of `private` and `public` I protect methods BUT! I'll only do it on these 2 conditions: 1. inside class I act just like `public` and my methods are out in the open. and 2. outside class I act like `private` I don't want anyone using my methods!"
+    - Method Access Control thought they were the weirdest bunch he ever met but he knows they each help out showing and hiding instance methods. 
